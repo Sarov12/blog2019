@@ -40,6 +40,3 @@ ru:
         body: Текст сообщений
         title: Заголовок
         page_views_count: Количество просмотров
-      user:
-        login: "Handle"
-      # will translate User attribute "login" as "Handle"
