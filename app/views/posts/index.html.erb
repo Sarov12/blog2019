@@ -1,19 +1,14 @@
 <p id="notice"><%= notice %></p>
-<h1> Блог </h1>
-<div class="button" style="margin-top: 30px">
-  <%= link_to 'Новый пост', new_post_path %>
-  </div>
-<div>
-  <%@posts.each do |post|%>
-  <hr>
-  <div class="grid-container">
-    <div class="grid-item"><b><%=post.title%></b></div>
-    <div class="grid-item"><%= post.body %></div>
-    <div class="grid-item"><small><%= post.user&.login %><p><%= l(post.created_at, format: :long) %></p></small><p class="button"><%= link_to 'Подробнее', post %></p></div>
-  </div>
-  </div>
+
+<h1>Блог</h1>
+
+<%@posts.each do |post|%>
+<div class="">
+  <h3><%= post.title=%><h3>
+  <p><%=post.body %></p>
+  <small><%=  post.user&.login %></small>
+  <%= l(post.created_at, format: :long) %>
+  <%= link_to 'Подробнее', post %>
+</div>
 <%end%>
-<hr>
-<div class="button">
-  <%= link_to 'Новый пост', new_post_path %>
-  </div>
+<%= link_to 'New Post', new_post_path %>
