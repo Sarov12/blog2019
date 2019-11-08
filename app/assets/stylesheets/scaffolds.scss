@@ -1,12 +1,14 @@
 body {
-  background-color: #fff;
-  color: #333;
-  margin: 33px;
+  background-color: rgb(201, 220, 216);
+  color: #red;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 18px;
 }
+h1 {
+  font-size: 70px;
 
+}
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -20,15 +22,16 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #black;
+  text-decoration: none;
 
   &:visited {
-    color: #666;
+    color: #blue;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #000;
+    background-color: #ddd;
+    color: black;
   }
 }
 
@@ -81,4 +84,33 @@ div {
 
 label {
   display: block;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.button{
+  background-color: #50ff00;
+  border-style: solid;
+  color: #000;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  text-decoration-style: solid;
+  font-size: 16px;
+  margin-top:10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.grid-container {
+  display:grid;
+  grid-template-columns: auto auto;
+  border-color: black;
+  border-style: solid;
+  padding: 10px;
+}
+.grid-item {
+  overflow-x:hidden;
+  padding: 5px;
+  font-size: 14px;
 }
